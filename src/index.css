@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aeonik";
+  src: url(./assets/fonts/Aeonik-Regular.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Aeonik-Bold";
+  src: url(./assets/fonts/Aeonik-Bold.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Aeonik-Light";
+  src: url(./assets/fonts/Aeonik-Light.otf) format("opentype");
+}
+
+body {
+  background-color: rgb(23 23 23) /* #171717 */;
+}
+
+.font-aeonik {
+  font-family: "Aeonik", sans-serif;
+}
+
+.font-aeonik-light {
+  font-family: "Aeonik-Light", sans-serif;
+}
+
+.font-aeonik-bold {
+  font-family: "Aeonik-Bold", sans-serif;
+}
