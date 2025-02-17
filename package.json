@@ -10,7 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "some-package": "git+https://github.com/mrfinndev/DeFi-Tracker.git",
     "@quicknode/sdk": "^2.3.0",
     "@web3-react/core": "^8.2.3",
     "@web3-react/injected-connector": "^6.0.7",
