@@ -78,7 +78,8 @@ const App = () => {
 
       // Get ETH price in USD
       const ethPriceData = tokenPrices.find(
-        (priceData: any) => priceData.symbol === "ETH"
+        (priceData: { symbol: string; quotes: { USD: { price: number } } }) =>
+          priceData.symbol === "ETH"
       );
       if (ethPriceData && ethPriceData.quotes?.USD?.price != null) {
         const ethPrice = ethPriceData.quotes.USD.price;
@@ -90,7 +91,8 @@ const App = () => {
       // Map token balances with their USD values
       const tokenDisplayData: TokenDisplay[] = tokenBalances.map((token) => {
         const tokenData = tokenPrices.find(
-          (priceData: any) => priceData.symbol === token.symbol
+          (priceData: { symbol: string; quotes: { USD: { price: number } } }) =>
+            priceData.symbol === token.symbol
         );
 
         if (tokenData && tokenData.quotes?.USD?.price != null) {
